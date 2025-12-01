@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="DeltaTrust logo">
+  <rect x="18" y="14" width="52" height="52" rx="8" fill="none" stroke="#e07b39" stroke-width="4"></rect>
+  <path d="M28 50 L46 30 L62 46" stroke="#e07b39" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+  <text x="88" y="48" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e07b39">DeltaTrust</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="CoreRisk logo">
+  <circle cx="44" cy="40" r="26" fill="none" stroke="#2b6fb0" stroke-width="4"></circle>
+  <path d="M34 36 L54 22 M34 44 L54 58" stroke="#2b6fb0" stroke-width="3" stroke-linecap="round"></path>
+  <text x="84" y="46" font-family="Inter, Arial, sans-serif" font-size="14" fill="#2b6fb0">CoreRisk</text>
+</svg>

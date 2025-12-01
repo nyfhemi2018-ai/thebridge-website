@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="Apex Markets logo">
+  <rect width="240" height="80" rx="8" fill="none"></rect>
+  <g fill="none" stroke="#1f8f6f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 60 L70 20 L110 48 L150 18 L190 56"></path>
+  </g>
+  <text x="20" y="72" font-family="Inter, Arial, sans-serif" font-size="12" fill="#1f8f6f">Apex Markets</text>
+</svg>

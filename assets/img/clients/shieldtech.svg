@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="ShieldTech logo">
+  <g transform="translate(10,8)">
+    <path d="M36 4 L24 12 L24 28 C24 44 36 54 36 54 C36 54 48 44 48 28 L48 12 L36 4 Z" stroke="#334b5c" stroke-width="3" fill="none"></path>
+    <circle cx="36" cy="28" r="6" fill="#334b5c"></circle>
+  </g>
+  <text x="84" y="46" font-family="Inter, Arial, sans-serif" font-size="14" fill="#334b5c">ShieldTech</text>
+</svg>

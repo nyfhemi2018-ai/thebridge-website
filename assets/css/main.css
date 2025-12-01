@@ -2133,6 +2133,12 @@ section,
   .how-we-work .step-card {
     padding: 2rem 1.5rem;
   }
+
+}
+.fic-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 /*--------------------------------------------------------------
@@ -5447,6 +5453,7 @@ section,
   .error-404 .search-box {
     margin: 0 20px;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -5454,4 +5461,8 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+.clients img {
+  filter: none !important;
+  opacity: 1 !important;
 }
+

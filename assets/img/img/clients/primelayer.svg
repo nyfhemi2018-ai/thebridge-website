@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="PrimeLayer logo">
+  <g fill="none" stroke="#2eb67d" stroke-width="4" stroke-linecap="round">
+    <rect x="16" y="16" width="48" height="48" rx="8"></rect>
+    <path d="M40 22 L40 54" stroke="#2eb67d" stroke-width="3"></path>
+  </g>
+  <text x="84" y="48" font-family="Inter, Arial, sans-serif" font-size="14" fill="#2eb67d">PrimeLayer</text>
+</svg>
