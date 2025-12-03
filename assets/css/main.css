@@ -2135,7 +2135,7 @@ section,
   }
 
 }
-.fic-icon {
+.icon {
   width: 48px;
   height: 48px;
   object-fit: contain;
@@ -5454,7 +5454,13 @@ section,
     margin: 0 20px;
   }
   
+}.image-wrapper img.africa-map-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
 }
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
