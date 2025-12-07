@@ -5465,10 +5465,22 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 .clients img {
   filter: none !important;
   opacity: 1 !important;
+}
+
+.clients .swiper-slide {
+  width: auto !important;
+}
+/* Add space under hero buttons */
+.hero .hero-buttons,
+.hero .cta-buttons,
+.hero .d-flex {
+  margin-bottom: 40px !important;
+}
+
+}
+
 }
 
