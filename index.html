@@ -1796,6 +1796,27 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const header = item.querySelector('.faq-header');
+
+    header.addEventListener('click', () => {
+      // Close any open FAQ first
+      faqItems.forEach(i => {
+        if (i !== item) {
+          i.classList.remove('faq-active');
+        }
+      });
+
+      // Toggle the clicked FAQ
+      item.classList.toggle('faq-active');
+    });
+  });
+});
+</script>
 
 </body>
 
