@@ -5498,6 +5498,19 @@ section,
 .faq-item.faq-active i.bi-dash {
   display: inline-block;
 }
+/* hero CTA spacing and stats separation */
+.hero-ctas { gap: 12px; flex-wrap: wrap; }
+.hero-ctas .btn { margin-bottom: 0.4rem; }
+.hero .btn-get-started { min-width: 150px; }
+
+/* ensure hero stats sit below CTAs and do not overlap */
+.hero-stats { margin-top: 18px; display:flex; gap:18px; flex-wrap:wrap; }
+
+/* safe mobile fallback */
+@media (max-width: 768px) {
+  .hero-ctas .btn { min-width: 100%; text-align:center; }
+  .hero-stats { margin-top: 12px; flex-direction:column; gap:8px; }
+}
 
 
 }
