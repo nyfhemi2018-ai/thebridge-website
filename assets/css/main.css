@@ -5478,7 +5478,27 @@ section,
 .hero .cta-buttons,
 .hero .d-flex {
   margin-bottom: 40px !important;
+}.faq-content {
+  display: none;
+  padding: 15px 0;
 }
+
+.faq-item.faq-active .faq-content {
+  display: block;
+}
+
+.faq-toggle i.bi-dash {
+  display: none;
+}
+
+.faq-item.faq-active i.bi-plus {
+  display: none;
+}
+
+.faq-item.faq-active i.bi-dash {
+  display: inline-block;
+}
+
 
 }
 

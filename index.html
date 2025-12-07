@@ -130,7 +130,7 @@
               </a>
 
 
-              
+
               </div>
               <div class="hero-stats">
                 <div class="stat-item"> 
@@ -1711,6 +1711,22 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll('.init-swiper').forEach(function(swiperElement) {
     const config = JSON.parse(swiperElement.querySelector('.swiper-config').innerHTML.trim());
     new Swiper(swiperElement, config);
+  });
+});
+</script>
+<script src="assets/js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-item .faq-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement;
+
+    // Close all other items
+    document.querySelectorAll('.faq-item').forEach(faq => {
+      if (faq !== item) faq.classList.remove('faq-active');
+    });
+
+    // Toggle this one
+    item.classList.toggle('faq-active');
   });
 });
 </script>
