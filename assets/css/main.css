@@ -5511,6 +5511,9 @@ section,
   .hero-ctas .btn { min-width: 100%; text-align:center; }
   .hero-stats { margin-top: 12px; flex-direction:column; gap:8px; }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 
 }
