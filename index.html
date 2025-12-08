@@ -1649,19 +1649,30 @@ an infrastructure layer that protects traders, strengthens brokers, and empowers
 <!-- Scroll Top / Preloader / Modal remain unchanged -->
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<!-- Swiper Initializer -->
 <script>
-document.getElementById("partnerForm").addEventListener("submit", function(e) {
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.init-swiper').forEach(function(swiperElement) {
+    const config = JSON.parse(swiperElement.querySelector('.swiper-config').innerHTML.trim());
+    new Swiper(swiperElement, config);
+  });
+});
+</script>
+
+<!-- Partner Program Google Sheet Submit -->
+<script>
+document.getElementById("partnerForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const status = document.getElementById("formStatus");
@@ -1675,7 +1686,7 @@ document.getElementById("partnerForm").addEventListener("submit", function(e) {
     message: document.querySelector("[name='message']").value
   };
 
-  fetch("YOUR_WEB_APP_URL_HEREhttps://script.google.com/macros/s/AKfycbzETcoYQvF1o5_-ZAAdSRqiZpRUzEyGcY3vy4Ssm5wIg_RcVEK5HmMZasplVi3gyiCg/exec",{
+  fetch("https://script.google.com/macros/s/AKfycbzETcoYQvF1o5_-ZAAdSRqiZpRUzEyGcY3vy4Ssm5wIg_RcVEK5HmMZasplVi3gyiCg/exec", {
     method: "POST",
     mode: "no-cors",
     headers: { "Content-Type": "application/json" },
@@ -1688,136 +1699,35 @@ document.getElementById("partnerForm").addEventListener("submit", function(e) {
   .catch(() => {
     status.innerHTML = "<span style='color:red;'>Something went wrong. Try again.</span>";
   });
-
 });
 </script>
-<script>
-document.getElementById("partnerForm").addEventListener("submit", function (e) {
-    e.preventDefault();
 
-    const status = document.getElementById("formStatus");
-    status.innerHTML = "Submitting…";
-
-    const formData = {
-        fullName: document.querySelector("[name='full-name']").value,
-        email: document.querySelector("[name='email']").value,
-        company: document.querySelector("[name='company']").value,
-        partnerType: document.querySelector("[name='partner-type']").value,
-        message: document.querySelector("[name='message']").value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycbzETcoYQvF1o5_-ZAAdSRqiZpRUzEyGcY3vy4Ssm5wIg_RcVEK5HmMZasplVi3gyiCg/exec", {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-    })
-    .then(() => {
-        status.innerHTML = "<span style='color:green;'>Application submitted successfully!</span>";
-        document.getElementById("partnerForm").reset();
-    })
-    .catch(() => {
-        status.innerHTML = "<span style='color:red;'>Something went wrong. Try again.</span>";
-    });
-});
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('.init-swiper').forEach(function(swiperElement) {
-    const config = JSON.parse(swiperElement.querySelector('.swiper-config').innerHTML.trim());
-    new Swiper(swiperElement, config);
-  });
-});
-</script>
-<script src="assets/js/main.js"></script>
-<script>
-document.querySelectorAll('.faq-item .faq-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const item = header.parentElement;
-
-    // Close all other items
-    document.querySelectorAll('.faq-item').forEach(faq => {
-      if (faq !== item) faq.classList.remove('faq-active');
-    });
-
-    // Toggle this one
-    item.classList.toggle('faq-active');
-  });
-});
+<!-- FAQ Toggle -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Debug: log if the hero DOM is valid
-  const hero = document.getElementById('hero');
-  if (!hero) { console.error('Hero section missing: #hero not found'); }
-  else { console.info('Hero section loaded OK'); }
-
-  // Confirm buttons exist and log their href targets
-  ['btn-get-licensed','btn-partner','btn-watch-demo'].forEach(id => {
-    const el = document.getElementById(id);
-    if (!el) console.warn('Missing button:', id);
-    else console.info('Button', id, '->', el.getAttribute('href') || 'modal/button');
-  });
-
-  // Ensure modal triggering works (non-invasive)
-  const demoBtn = document.getElementById('btn-watch-demo');
-  if (demoBtn) {
-    demoBtn.addEventListener('click', function() {
-      console.info('Watch Demo clicked — bootstrap should open modal if present');
-    });
-  }
-});
-</script>
-<!-- Watch Demo Modal -->
-<div class="modal fade" id="watchDemoModal" tabindex="-1" aria-labelledby="watchDemoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content dark-background">
-
-      <div class="modal-header">
-        <h5 class="modal-title" id="watchDemoLabel">AI Risk Assistant Demo (Coming Soon)</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body text-center py-5">
-
-        <div class="demo-placeholder" style="
-          border: 2px dashed rgba(255, 255, 255, 0.3);
-          padding: 60px;
-          border-radius: 12px;
-        ">
-          <i class="bi bi-robot" style="font-size: 60px; color: #0dcaf0;"></i>
-          <h4 class="mt-3">AI Assistant Demo Loading Soon</h4>
-          <p class="mt-2 text-muted">
-            We’re building the first AI-powered risk assistant for African traders.<br>
-            A fully interactive demo will be added shortly.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const faqItems = document.querySelectorAll('.faq-item');
-
-  faqItems.forEach(item => {
-    const header = item.querySelector('.faq-header');
-
+  document.querySelectorAll('.faq-item .faq-header').forEach(header => {
     header.addEventListener('click', () => {
-      // Close any open FAQ first
-      faqItems.forEach(i => {
-        if (i !== item) {
-          i.classList.remove('faq-active');
-        }
+      const item = header.parentElement;
+
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        if (faq !== item) faq.classList.remove('faq-active');
       });
 
-      // Toggle the clicked FAQ
       item.classList.toggle('faq-active');
     });
   });
+});
+</script>
+
+<!-- Watch Demo Modal Exists? -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const demoBtn = document.getElementById('btn-watch-demo');
+  if (demoBtn) {
+    demoBtn.addEventListener('click', function() {
+      console.log('Watch Demo Triggered');
+    });
+  }
 });
 </script>
 
