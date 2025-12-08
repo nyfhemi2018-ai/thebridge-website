@@ -5514,6 +5514,11 @@ section,
 html {
   scroll-behavior: smooth;
 }
+#navmenu.mobile-nav-active {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
 
 
 }
