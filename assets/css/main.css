@@ -5518,7 +5518,52 @@ html {
   left: 0;
   opacity: 1;
   visibility: visible;
+}/* Make all primary buttons use FIC Green instead of Bootstrap Blue */
+.btn-primary {
+    background-color: #0FA958 !important;
+    border-color: #0FA958 !important;
+    color: #fff !important;
 }
+
+/* Hover effect */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0d8e49 !important;
+    border-color: #0d8e49 !important;
+}
+
+/* Outline buttons changed to green border */
+.btn-outline-light {
+    border-color: #0FA958 !important;
+    color: #0FA958 !important;
+}
+
+/* Hover for outline */
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    background-color: #0FA958 !important;
+    color: #fff !important;
+}
+
+/* Submit button on partner form */
+button[type="submit"] {
+    background-color: #0FA958 !important;
+    border-color: #0FA958 !important;
+}
+/* Override Bootstrap's outline-primary (blue border) */
+.btn-outline-primary {
+    color: #0FA958 !important;
+    border-color: #0FA958 !important;
+}
+
+/* Hover */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: #0FA958 !important;
+    border-color: #0FA958 !important;
+    color: #fff !important;
+}
+
 
 
 }
