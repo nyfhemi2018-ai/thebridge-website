@@ -5564,7 +5564,22 @@ button[type="submit"] {
     color: #fff !important;
 }
 
+.mobile-nav-active .navmenu {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
 
+.navmenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: #000; /* your dark theme */
+  transition: 0.4s ease;
+  padding: 20px;
+}
 
 }
 

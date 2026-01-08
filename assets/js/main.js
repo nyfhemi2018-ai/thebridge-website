@@ -204,5 +204,6 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+<script src="assets/js/main.js"></script>
 
 })();
