@@ -5580,6 +5580,35 @@ button[type="submit"] {
   transition: 0.4s ease;
   padding: 20px;
 }
+/* ===== MOBILE NAV FIX ===== */
+@media (max-width: 1199px) {
+
+  .navmenu {
+    position: relative;
+  }
+
+  body.mobile-nav-active .navmenu {
+    position: fixed;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.85);
+    z-index: 9997;
+  }
+
+  body.mobile-nav-active .navmenu ul {
+    display: block;
+    position: absolute;
+    inset: 70px 20px 20px 20px;
+    background-color: var(--nav-mobile-background-color);
+    border-radius: 8px;
+    padding: 10px 0;
+    overflow-y: auto;
+  }
+
+  body.mobile-nav-active {
+    overflow: hidden;
+  }
+
+}
 
 }
 
