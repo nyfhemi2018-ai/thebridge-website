@@ -1,0 +1,44 @@
+# FIC Technologies
+
+> FIC Technologies builds continuous risk governance and capital protection infrastructure for modern financial markets.
+
+Canonical website: https://fictechs.com/
+Location: 9 Adamu Ciroma Crescent, Jabi, Abuja, Nigeria
+Email: info@fictechs.com
+Telephone: +234 707 070 4095
+
+## Organisation
+
+FIC means Financial Infrastructure & Compliance. FIC provides a governance layer connecting verified identity, behavioural competence, risk boundaries, mandate controls and auditable evidence for participation in financial markets.
+
+FIC does not execute trades, hold client funds, act as a broker, replace regulatory authority or guarantee investment returns. Capital remains within licensed or custodial institutions.
+
+## Infrastructure
+
+### FIC Core
+
+FIC Core governs participation in traded markets. It supports trader identity and TLN credentialing, governance plans, risk boundaries, continuous behaviour and exposure monitoring, and permissioned performance evidence.
+
+### Capital Hub
+
+Capital Hub extends FIC's governance model into investment and capital allocation. It supports governed opportunities, investor mandates, permissioned due diligence, licensed institution coordination and ongoing reporting and exit controls.
+
+## Stakeholders
+
+- Traders: professional identity, behavioural evidence and visible risk boundaries.
+- Individual and institutional investors: mandate definition, governed participation and ongoing oversight.
+- Licensed institutions: clearer participation controls and auditable governance evidence.
+- Regulators: structured identity, conduct and risk evidence that can support supervision and policy enforcement.
+
+## Core concepts
+
+- Continuous risk governance
+- Capital protection
+- Financial market participation governance
+- Trader License Number and TLN credentialing
+- Investor mandate governance
+- Structured regulatory evidence
+
+## Official source
+
+- https://fictechs.com/
